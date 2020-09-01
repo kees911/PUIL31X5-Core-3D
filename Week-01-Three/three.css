@@ -1,0 +1,80 @@
+.container {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contents {
+    height: 33vh;
+}
+
+@keyframes shape-1 {
+  0%   {opacity: 0;}
+  25%  {opacity: 1;}
+  50%  {opacity: 0;}
+  75%  {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes shape-2 {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 1;}
+  75%  {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes shape-3 {
+  0%   {opacity: 0;}
+  25%  {opacity: 0;}
+  50%  {opacity: 0;}
+  75%  {opacity: 1;}
+  100% {opacity: 0;}
+}  
+
+/*
+.dot {
+  height: 33px;
+  width: 33px;
+  background-color: #333;
+  border-radius: 50%;
+  display: inline-block;
+}
+*/
+
+ .triangles {
+      width: 0;
+      height: 0;
+      border-bottom: 33vh solid #333;
+        border-left: calc(33vh/1.8) solid transparent;
+      border-right: calc(33vh/1.8) solid transparent;
+    }
+/*Responds to readjustment of window size*/
+
+#shape-1 {
+animation-name: shape-1;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+        
+#shape-2 {
+animation-name: shape-2;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+        
+#shape-3 {
+animation-name: shape-3;
+animation-duration: 3s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+/*
+div {
+align-content: center;
+position: relative;
+vertical-align: middle;
+}*/
